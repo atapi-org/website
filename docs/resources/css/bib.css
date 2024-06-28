@@ -1,0 +1,19 @@
+a {
+  display: inline;
+  text-decoration: none;
+}
+
+blockquote {
+  font-family: Alata, Helvetica;
+  font-size: 0.8rem;
+  line-height: normal;
+}
+
+table {
+  width: 100%;
+  padding: 2rem;
+}
+
+.bibtexnumber, .bibtexitem {
+  font-size: 1.0rem;
+}
