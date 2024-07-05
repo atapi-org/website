@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+     // If 'prefers-color-scheme' is not supported, fall back to light mode.
+     // In this case, light.css will be downloaded with 'highest' priority.
+     if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+       document.documentElement.style.display = 'none';
+       document.head.insertAdjacentHTML(
+         'beforeend',
+         '<link rel="stylesheet" href="resources/css/light.css" onload="document.documentElement.style.display = \'\'">',
+       );
+     }
+    </script>
+    <!--  // following advice from: -->
+    <!--  // https://web.dev/prefers-color-scheme/ -->
+    <link rel="stylesheet" href="/resources/css/dark.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="/resources/css/light.css" media="(prefers-color-scheme: light)" />
+    <link rel="stylesheet" href="/resources/css/atapi.css">
+
+    <title>Ātāpī Research Inc. - Policies</title>
+  </head>
+
+  <body color-mode="user">
+    <h1>Policies, Terms, and Conditions</h1>
+
+    <h2>Membership Service</h2>
+    <p>
+      Sponsors may contact <a href="atari@atapi.org">atari@atapi.org</a>
+      at any time to request assistance with their membership.
+    </p>
+
+    <h2>Cancellation Policy</h2>
+    <p>
+      Sponsor memberships are billed monthly.
+      Sponsors may cancel their membership at any time.
+    </p>
+
+    <h2>Refund and Dispute Policy</h2>
+    <p>
+      Sponsor memberships are billed continuously (monthly).
+      Under normal circumstances, refunds will not be provided.
+      If a sponsorship payment is made in error, a refund for that
+      month's payment can be requested by emailing
+      <a href="atari@atapi.org">atari@atapi.org</a>.
+      Due to the nature of the research conducted by Atapi Research Inc.,
+      please allow up to 90 calendar days for a refund to be processed.
+    </p>
+
+    <footer>
+      Copyright © 2024 Atapi Research Inc.
+    </footer>
+
+  </body>
+
+</html>
